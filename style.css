@@ -1,0 +1,141 @@
+/*
+Bu CSS kodu, hava durumu uygulamasının görünümünü belirlemek için kullanılır.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+Tüm elementlere uygulanan stil tanımları
+margin ve padding değerleri sıfırlanır
+box-sizing değeri border-box olarak ayarlanır
+*/
+
+body{
+    font-family: 'montserrat', sans-serif;
+    background-image: url(nature-outdoors-sky-soft-summer-blue-sky.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/*
+body elementi için stil tanımları
+metinlerde 'montserrat' veya sans-serif yazı tipi kullanılır
+arka plan resmi belirlenir
+arka plan resmi ortalanır
+arka plan resmi tekrarlanmaz
+arka plan resmi sayfaya sığdırılır
+body elementinin yüksekliği 100vh (viewport yüksekliği) olarak ayarlanır
+*/
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    height: 100vh;
+}
+/*
+.app sınıfı için stil tanımları
+display: flex ile içerik elemanları yatay olarak hizalanır
+flex-direction: column ile içerik elemanları dikey yönde sıralanır
+align-items: center ile içerik elemanları yatayda merkezlenir
+text-align: center ile içerik elemanlarının metinleri yatayda merkezlenir
+background: rgba(0, 0, 0, 0) ile arka plan tamamen şeffaf olur
+height: 100vh ile .app elementinin yüksekliği viewport yüksekliği kadar olur
+*/
+
+.header{
+    padding: 50px 20px 30px 20px;
+}
+/*
+.header sınıfı için stil tanımları
+padding değerleri ile içerik elemanının kenar dolgusu belirlenir
+*/
+
+.header h1{
+    font-size: 50px;
+    color: #000000;
+}
+/*
+.header içindeki h1 elementi için stil tanımları
+font-size: 50px ile başlık yazı tipi boyutu belirlenir
+color: #fbb034 ile başlık yazı tipi rengi belirlenir
+text-shadow ile başlık metnine hafif bir gölge eklenir
+*/
+
+.header input{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #000000;
+    text-align: center;
+    font-size: 20px;
+    color: #f2f2f2;
+}
+/*
+.header içindeki input elementi için stil tanımları
+width: 100% ile input elementinin genişliği tamamen dolar
+padding değerleri ile içerik elemanının kenar dolgusu belirlenir
+background: transparent ile arka plan şeffaf olur
+border: 0 ile sınırlar kaldırılır
+outline: 0 ile odak çizgisi kaldırılır
+border-bottom ile alt kenarlık belirlenir
+text-align: center ile metin yatayda merkezlenir
+font-size: 20px ile metin boyutu belirlenir
+color: #f2f2f2 ile metin rengi belirlenir
+*/
+
+.city{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+/*
+.city sınıfı için stil tanımları
+font-size: 35px ile metin boyutu belirlenir
+font-weight: 500 ile metnin kalınlığı belirlenir
+margin-bottom: 10px ile alt boşluk belirlenir
+text-shadow ile metne hafif bir gölge eklenir
+*/
+
+.temp{
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+/*
+.temp sınıfı için stil tanımları
+font-size: 100px ile metin boyutu belirlenir
+font-weight: 700 ile metnin kalınlığı belirlenir
+margin-bottom: 15px ile alt boşluk belirlenir
+text-shadow ile metne hafif bir gölge eklenir
+*/
+
+.desc{
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+/*
+.desc sınıfı için stil tanımları
+font-size: 24px ile metin boyutu belirlenir
+font-style: italic ile metnin eğik yazı stili olur
+text-shadow ile metne hafif bir gölge eklenir
+margin-bottom: 10px ile alt boşluk belirlenir
+*/
+
+.minmax{
+    font-size: 24px;
+}
+/*
+.minmax sınıfı için stil tanımları
+font-size: 24px ile metin boyutu belirlenir
+text-shadow ile metne hafif bir gölge eklenir
+*/
